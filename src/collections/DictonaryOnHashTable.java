@@ -7,6 +7,12 @@ package collections;
  * time        : 15:34
  * description : 基于散列表实现的无序词典结构。
  * 采用分离链策略解决冲突。
+ * 性能分析：
+ * 只要始终保证装填因子足够小，且学则合适的散列函数，则每个桶对应的字词典都不至于太大。
+ * 在以上条件下，find、insert、remove 操作的平均时间复杂度为 O(1)。
+ * findAll 操作的复杂度为 O(1+m)，其中 m 为查找命中的条目的实际数目。输出敏感的算法。
+ * 适用场景：
+ * 插入操作频繁，查找、删除操作却极少进行。
  */
 public class DictonaryOnHashTable implements Dictionary {
 
