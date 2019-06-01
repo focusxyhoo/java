@@ -33,7 +33,7 @@ public class DictonaryOnHashTable implements Dictionary {
     }
 
 
-    /******************************* 构造方法 **************************************/
+    /******************************* 辅助方法 **************************************/
 
     private int h(Object key) {
         return key.hashCode() % N;
@@ -57,7 +57,7 @@ public class DictonaryOnHashTable implements Dictionary {
         }
     }
 
-    /******************************* 构造方法 **************************************/
+    /******************************* Dictionary 接口方法 **************************************/
     @Override
     public int getSize() {
         return size;
