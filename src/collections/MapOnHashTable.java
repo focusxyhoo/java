@@ -11,7 +11,7 @@ public class MapOnHashTable implements Map {
 
     private Map[] A;
     private int N;
-    private final double maxCapality = 0.75;
+    private final double maxLemda = 0.75;
     private int size;
     private EqualityTester T;
 
@@ -60,7 +60,7 @@ public class MapOnHashTable implements Map {
         Object oldValue = A[h(key)].put(key, value);
         if (null == oldValue) {
             size++;
-            if (size > N * maxCapality) {
+            if (size > N * maxLemda) {
                 reharsh();
             }
         }
@@ -106,7 +106,7 @@ public class MapOnHashTable implements Map {
      * @param n
      * @return
      */
-    private static boolean prime(int n) {
+    protected static boolean prime(int n) {
         for (int i = 3; i < 1 + Math.sqrt(n); i++) {
             if (n / i * i == n) {
                 return false;
@@ -121,7 +121,7 @@ public class MapOnHashTable implements Map {
      * @param n
      * @return
      */
-    private static int p(int n) {
+    protected static int p(int n) {
         if (3 > n) {
             n = 3;
         }
