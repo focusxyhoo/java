@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8147a7da-70c0-45dd-baa6-b98bb118fc0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/collections/BSTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collections/BSTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collections/SortedDictionaryOnExtendableArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/SortedDictionaryOnExtendableArray.java" afterDir="false" />
-    </list>
+    <list default="true" id="8147a7da-70c0-45dd-baa6-b98bb118fc0d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +17,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/collections/BSTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
+            <state relative-caret-position="-1137">
               <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
               <folding>
                 <element signature="e#548#549#0" expanded="true" />
@@ -62,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="826" />
@@ -159,15 +154,15 @@
       <updated>1559361509146</updated>
       <workItem from="1559361510484" duration="4013000" />
       <workItem from="1559382259530" duration="1294000" />
-      <workItem from="1559722504603" duration="4666000" />
+      <workItem from="1559722504603" duration="4871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9973000" />
+    <option name="totallyTimeSpent" value="10178000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="826" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -328,7 +323,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/collections/BSTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
+        <state relative-caret-position="-1137">
           <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
           <folding>
             <element signature="e#548#549#0" expanded="true" />
