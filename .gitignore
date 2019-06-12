@@ -1,0 +1,11 @@
+# ide
+*.iml
+.idea/
+.vscode
+
+# macos
+.DS_Store
+
+# build
+out/
+*.class
