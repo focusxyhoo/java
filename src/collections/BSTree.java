@@ -78,13 +78,42 @@ public class BSTree extends BinaryTreeLinkedList implements Dictionary {
 
     @Override
     public Entry remove(Object key) {
+        if (isEmpty()) return null;
 
-        return null;
+        BinaryTreePosition v = binSearch((BSTreeNode) root, key, C);
+        if (0 != C.compare(key, ((BSTreeNode) v).getKey())) return null;
+
+        // 至此，查找必成功，接下来需要删除节点 v
+        if (v.hasLChild()) {
+            BinaryTreePosition w = v.getPrev();
+            w.setElement(v.setElement(w.getElement()));
+            v = w;
+        }
+
+        // 至此， v 至多只有一个孩子。删除 v，代之以其孩子。
+        lastV = v.getParent();
+        BinaryTreePosition u = v.hasLChild() ? v.getLChild() : v.getRChild();
+        if (null == lastV) {
+            if (null != u)
+                u.secede();
+            root = u;
+        } else {
+            if (v.isLChild()) {
+                v.secede();
+                lastV.attachL(u);
+            } else {
+                v.secede();
+                lastV.attchR(u);
+            }
+        }
+        return (Entry) v.getElement();
     }
 
     @Override
     public Iterator entries() {
-        return null;
+        List list = new ListOnDLNode();
+        concatenate(list, (BSTreeNode) root);
+        return list.elements();
     }
 
     /******************************* 辅助方法 **************************************/
